@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "419819416074",
+    "project_id": "sprintitappfinal",
+    "storage_bucket": "sprintitappfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419819416074:android:aedab6d29f6c6a50f58df3",
+        "android_client_info": {
+          "package_name": "com.example.sprintitappfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419819416074-065vbst53hnlehck0ni3cp9c1rgajb9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwwkv4o8dk1w8NLfyC3Z4tgTMj4EL8n8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419819416074-065vbst53hnlehck0ni3cp9c1rgajb9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

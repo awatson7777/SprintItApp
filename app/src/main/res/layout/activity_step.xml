@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientlist"
+    android:id="@+id/steplayout"
+    tools:context=".stepActivity">
+
+    <!-- Layout for a main page, including text and numbers representing values -->
+
+    <TextView
+        android:id="@+id/stepText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Step Counter"
+        android:layout_marginTop="29dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepText"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Let's see how many steps you are doing!"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/stepCounterTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Total Number of Steps:"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/stepCounterCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepCounterTotal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Current Number of Steps"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/lightlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Current Light Level:"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_below="@+id/stepCounterCurrent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lightHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lightlevel"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Auto Flashlight - If This Value Is Lower Than 50, The Flashlight Will Be Turned On!"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

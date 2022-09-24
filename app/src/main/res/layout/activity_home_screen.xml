@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    android:background="@drawable/gradientlist"
+    android:id="@+id/homelayout">
+
+    <!-- Main screen layout including text, card view buttons involving images, live date and time and -->
+    <!-- a sign out button that brings then user back to the login screen -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome"
+        android:text="Welcome to Sprint-It!"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_margin="50dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Date:"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/welcome"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Time:"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/date"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/time"
+        android:rowCount="2"
+        android:columnCount="2"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_below="@id/time"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp" />
+
+    <ImageButton
+        android:id="@+id/timeactivity"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_below="@id/time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ic_baseline_watch_later_24"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp" />
+
+    <ImageButton
+        android:id="@+id/walkingactivity"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/timeactivity"
+        android:layout_below="@id/time"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/ic_baseline_directions_run_24"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp" />
+
+    <ImageButton
+        android:id="@+id/locationactivity"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_below="@id/timeactivity"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ic_baseline_location_on_24"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp" />
+
+    <ImageButton
+        android:id="@+id/notificationactivity"
+        android:layout_width="163dp"
+        android:layout_height="156dp"
+        android:layout_below="@id/walkingactivity"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/locationactivity"
+        android:background="@drawable/ic_baseline_notifications_24"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/notificationactivity"/>
+
+
+
+</RelativeLayout>

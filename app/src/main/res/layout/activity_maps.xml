@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradientlist"
+    android:id="@+id/mapsLayout"
+    tools:context=".notificationActivity"
+    android:orientation="vertical" >
+
+    <!-- This view utilises a map fragment view, using the google maps implementation -->
+    <!-- Button brings users to a general location, in this case brighton -->
+
+    <TextView
+        android:id="@+id/mapTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_margin="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Location Finder"></TextView>
+
+    <Button
+        android:id="@+id/gotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapTitle"
+        android:text="Go to Brighton"></Button>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:layout_below="@+id/gotoButton"
+        tools:context=".MapsActivity" />
+
+</RelativeLayout>

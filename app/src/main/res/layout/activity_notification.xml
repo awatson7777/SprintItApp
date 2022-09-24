@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientlist"
+    android:id="@+id/notificationlayout"
+    tools:context=".notificationActivity"
+    android:orientation="vertical">
+
+    <!-- Layout file that allows users to set a notification and send it to their notification bar -->
+
+    <EditText
+        android:id="@+id/notifyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:hint="Title"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/notifyBody"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/notifyTitle"
+        android:hint="Message"/>
+
+    <Button
+        android:id="@+id/channel1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notifyBody"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginTop="322dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:onClick="sendToChannel1"
+        android:text="Set Notification"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
